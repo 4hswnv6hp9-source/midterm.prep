@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Midterm Prep 2026 – Learn, Flip, Test</title>
+<link rel="icon" href="data:,">
+<style>
+:root{--bg:#F6F8FC;--card:#fff;--ink:#14213D;--mut:#55627F;--blue:#2B50E6;--hl:#FFE45C;--ok:#16915C;--bad:#D6404A;--line:#DDE3EF}
+@media(prefers-color-scheme:dark){:root{--bg:#0E1630;--card:#18234A;--ink:#EDF1FF;--mut:#A7B2D6;--blue:#8FA6FF;--line:#2B3862;--ok:#4FD39A;--bad:#FF7B83}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+h1,h2,h3,summary,#card strong{font-family:Georgia,"Iowan Old Style",serif;line-height:1.2}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+.hero{padding:40px 0 28px;background:repeating-linear-gradient(transparent 0 33px,var(--line) 33px 34px);border-bottom:2px solid var(--ink)}
+h1{font-size:clamp(2.2rem,8vw,3.6rem);margin:0 0 8px;letter-spacing:-.02em}
+.hero p{margin:0 0 22px;color:var(--mut)}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.duo div{background:var(--card);border:2px solid var(--ink);border-radius:14px;padding:14px;box-shadow:4px 4px 0 var(--blue)}
+.duo b{display:block;font:700 1.7rem Georgia,serif;color:var(--blue)}
+mark{background:var(--hl);color:#14213D;padding:0 .2em;border-radius:3px}
+.tabs{position:sticky;top:0;z-index:5;background:var(--bg);border-bottom:1px solid var(--line);display:flex;gap:8px;padding:10px 16px;justify-content:center}
+.tabs button{flex:1;max-width:200px;font:600 1rem system-ui;color:var(--ink);background:var(--card);border:2px solid var(--line);border-radius:10px;padding:10px;cursor:pointer}
+.tabs button[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+main{padding:12px 0 40px}
+details{background:var(--card);border:1px solid var(--line);border-left:6px solid var(--blue);border-radius:12px;margin:14px 0;padding:0 16px 4px}
+summary{cursor:pointer;padding:14px 0;font-size:1.25rem;font-weight:700;display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.tag{font:600 .8rem system-ui;background:var(--hl);color:#14213D;padding:2px 10px;border-radius:99px}
+.lead{font-size:1.08rem;margin:0 0 8px}
+ul{padding-left:20px;margin:8px 0}
+li{margin:4px 0}
+.ex{border-left:4px solid var(--hl);background:var(--bg);padding:8px 12px;margin:10px 0;border-radius:0 8px 8px 0}
+.ex.no{border-color:var(--bad)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:10px 0}
+.cmp div{padding:12px;border-radius:12px;background:var(--bg);border:1px solid var(--line)}
+ol.steps{list-style:none;padding:0;margin:10px 0;counter-reset:s}
+ol.steps li{counter-increment:s;position:relative;padding:0 0 14px 46px;margin:0}
+ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:32px;height:32px;border-radius:50%;background:var(--blue);color:var(--bg);font-weight:700;display:grid;place-items:center}
+.btn{padding:12px 20px;border:2px solid var(--ink);background:var(--blue);color:var(--bg);font:600 1rem system-ui;border-radius:12px;cursor:pointer}
+.btn.alt{background:var(--card);color:var(--ink)}
+.row{display:flex;gap:10px;justify-content:center;align-items:center;margin:18px 0;flex-wrap:wrap}
+#card{width:100%;min-height:230px;border:2px solid var(--ink);border-radius:20px;background:var(--card);color:var(--ink);box-shadow:6px 6px 0 var(--blue);padding:24px;font:inherit;cursor:pointer;display:flex;flex-direction:column;justify-content:center;text-align:center;gap:10px;margin-top:14px}
+#card strong{font-size:1.6rem}
+#card.back{background:var(--hl);color:#14213D}
+#card.back strong{font:600 1.15rem/1.5 system-ui}
+#card small{color:inherit;opacity:.7}
+.hint,.cnt{color:var(--mut);text-align:center;margin:6px 0;font-size:.95rem}
+.bar{height:8px;background:var(--line);border-radius:9px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--blue);transition:width .3s}
+.opt{display:block;width:100%;text-align:left;margin:8px 0;padding:14px;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:12px;font:inherit;cursor:pointer}
+.opt:hover{border-color:var(--blue)}
+.good{border-color:var(--ok);background:color-mix(in srgb,var(--ok) 20%,var(--card))}
+.bad{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 20%,var(--card))}
+#fb{margin-top:12px}
+.big{font:700 3rem Georgia,serif;text-align:center;margin:10px 0}
+footer{border-top:1px solid var(--line);padding:20px 16px 40px;color:var(--mut);font-size:.88rem;max-width:760px;margin:0 auto}
+:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<h1>Midterm Prep 2026</h1>
+<p>CELTA-aligned teaching principles in plain words. Learn it, flip it, test it.</p>
+<div class="duo"><div><b>ICQ</b>What do I <mark>do</mark>?</div><div><b>CCQ</b>What does it <mark>mean</mark>?</div></div>
+</div></header>
+
+<nav class="tabs" role="tablist" aria-label="Sections">
+<button role="tab" data-t="learn" aria-selected="true">Learn</button>
+<button role="tab" data-t="cards" aria-selected="false">Flashcards</button>
+<button role="tab" data-t="quiz" aria-selected="false">Quiz</button>
+</nav>
+
+<main class="wrap">
+<section id="learn">
+<details open><summary>Learning outcomes <span class="tag">your goals</span></summary>
+<ul>
+<li>Tell instruction checking from concept checking.</li>
+<li>Write good ICQs and CCQs for classroom situations.</li>
+<li>Explain schemata and how to activate prior knowledge.</li>
+<li>Use eliciting instead of just telling.</li>
+<li>Order a listening lesson and justify each stage.</li>
+</ul></details>
+
+<details open><summary>ICQ <span class="tag">Instruction Checking Question</span></summary>
+<p class="lead">Checks that students know <mark>what to DO</mark> in a task, not what words mean.</p>
+<ul>
+<li>Ask about grouping, task, time, output and materials.</li>
+<li>Ask after the instructions, before students start.</li>
+<li>Avoid “Do you understand?” A “yes” does not show understanding.</li>
+</ul>
+<div class="ex"><b>Instruction:</b> “In pairs, choose three pictures. You have two minutes.”<br><b>ICQs:</b> “Alone or in pairs?” “How many pictures?” “How long?”</div>
+<div class="ex"><b>Practice.</b> Instruction: “Listen twice. First, choose the best title individually; then compare with a partner.”<br>Good ICQs: “How many times will you listen?” “Do you choose alone first or with your partner?”</div>
+<div class="ex no"><b>Not an ICQ:</b> “What does ‘title’ mean?” That checks vocabulary, not the task.</div>
+</details>
+
+<details open><summary>CCQ <span class="tag">Concept Checking Question</span></summary>
+<p class="lead">Checks that students understand the <mark>meaning</mark> of a word, phrase or grammar.</p>
+<ul>
+<li>Keep questions short, clear and simpler than the target language.</li>
+<li>Do not repeat the target expression in the question.</li>
+<li>Check meaning, not only form.</li>
+<li>Always give a context. Meaning can change with context.</li>
+</ul>
+<div class="ex"><b>Target:</b> “She used to live in Samarkand.”<br>“Did she live there in the past?” (Yes)<br>“Does she live there now?” (No, in the usual meaning. Context needed.)</div>
+<div class="ex"><b>Target:</b> “He must be at home.” (His lights are on and his car is outside.)<br>“Am I completely certain?” (No)<br>“Do I think it is very likely?” (Yes)</div>
+<div class="ex no"><b>Not a CCQ for meaning:</b> “Is must a modal verb?” That is a form question.</div>
+</details>
+
+<details open><summary>ICQ vs CCQ <span class="tag">quick comparison</span></summary>
+<div class="cmp">
+<div><b>ICQ</b><br>Checks the task procedure.<br>“Do you write or speak?”<br>Comes after task instructions, before students start.</div>
+<div><b>CCQ</b><br>Checks language meaning.<br>“Is the action finished?”<br>Comes after presenting or clarifying target language.</div>
+</div>
+<p>Both need <mark>observable evidence</mark> of understanding. “Is it clear?” is not enough.</p>
+</details>
+
+<details open><summary>Schemata <span class="tag">prior knowledge</span></summary>
+<p class="lead">The organised knowledge and expectations students bring to a text or topic.</p>
+<ul>
+<li><b>Content schemata:</b> what students already know about the subject.</li>
+<li><b>Formal schemata:</b> what they expect from the text type and its organisation (interview, news report).</li>
+<li><b>Before listening:</b> show a photo, discuss the topic, predict ideas.</li>
+</ul>
+<div class="ex no">Careful: activating schemata supports understanding. It is not teaching every answer in advance.</div>
+</details>
+
+<details open><summary>Eliciting <span class="tag">draw it out</span></summary>
+<p class="lead">Prompting students to <mark>supply</mark> language, ideas or knowledge instead of giving it straight away.</p>
+<ul>
+<li><b>Techniques:</b> pictures, mime, situations, examples, prompts, guided questions.</li>
+<li><b>Use it</b> when students can reasonably find the answer. If the knowledge is missing, stop guessing and tell them.</li>
+<li><b>Benefits:</b> participation, diagnostic feedback, links to prior knowledge.</li>
+</ul>
+<div class="ex">Show a person carrying an umbrella under dark clouds. Ask “What might happen?” Students say “It might rain.”</div>
+</details>
+
+<details open><summary>Listening lesson <span class="tag">typical sequence</span></summary>
+<ol class="steps">
+<li><b>Lead-in / context.</b> Create interest and activate relevant schemata.</li>
+<li><b>Pre-teach blocking vocabulary.</b> Only if essential, not every unknown word.</li>
+<li><b>Gist task.</b> Listen for overall meaning. Set the task <mark>before</mark> playing the audio.</li>
+<li><b>Detail task.</b> Listen again for specific information.</li>
+<li><b>Feedback.</b> Pair-check, then confirm answers and evidence.</li>
+<li><b>Follow-up.</b> Respond to the content or use language from the text.</li>
+</ol>
+<div class="ex"><b>Memory trick:</b> <i>Little Pigs Go Dancing, Feeling Fabulous</i> = Lead-in, Pre-teach, Gist, Detail, Feedback, Follow-up.</div>
+<p>Lesson sequences are flexible, not an inflexible CELTA formula.</p>
+</details>
+
+<details open><summary>One-minute revision <span class="tag">self-check</span></summary>
+<ul>
+<li><b>ICQ</b> = “What do I do?” <b>CCQ</b> = “What does it mean?”</li>
+<li><b>Schemata</b> = prior knowledge and expectations.</li>
+<li><b>Eliciting</b> = drawing out what students already know.</li>
+<li><b>Listening</b> = context, purposeful first listen, focused second listen, feedback, response.</li>
+<li><b>Exam strategy:</b> define the term, give a realistic example, explain <mark>why</mark> it works.</li>
+</ul></details>
+</section>
+
+<section id="cards" hidden>
+<button id="card" aria-live="polite"></button>
+<p class="hint">Tap the card to flip it</p>
+<div class="row"><button class="btn alt" id="prev">Back</button><span id="cn" class="cnt"></span><button class="btn" id="next">Next</button></div>
+<div class="row"><button class="btn alt" id="shuf">Shuffle cards</button></div>
+</section>
+
+<section id="quiz" hidden><div id="qbox"></div></section>
+</main>
+
+<footer>Based on widely used CELTA-compatible ELT principles, not an official Cambridge CELTA handout. Sources: Cambridge English, CELTA syllabus / course overview. Scrivener, J. (2011). <i>Learning Teaching</i> (3rd ed.). Macmillan. Harmer, J. (2007). <i>The Practice of English Language Teaching</i> (4th ed.). Pearson. Terminology and stage labels can vary by trainer and lesson objective.</footer>
+
+<script>
+const $=s=>document.querySelector(s);
+const shuf=a=>{a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const C=[
+["ICQ","Instruction Checking Question. Checks: what do I DO? Example: “Alone or in pairs?”"],
+["CCQ","Concept Checking Question. Checks: what does it MEAN? Example: “Did she live there in the past?”"],
+["Why not “Do you understand?”","A “yes” is not evidence. Ask a real question instead."],
+["Schemata","Organised knowledge and expectations students bring to a text or topic."],
+["Content schemata","What students already know about the subject."],
+["Formal schemata","What students expect from the text type and its organisation (interview, news report)."],
+["Eliciting","Drawing language, ideas or knowledge out of students instead of telling them."],
+["Eliciting tools","Pictures, mime, situations, examples, prompts, guided questions."],
+["When NOT to elicit","When students can’t reasonably know the answer. Just tell them."],
+["Lead-in","Create interest and activate schemata."],
+["Pre-teach","Only blocking vocabulary, not every unknown word."],
+["Gist task","Listen for overall meaning. Set the task BEFORE playing the audio."],
+["Detail task","Listen again for specific information."],
+["Feedback","Pair-check, then confirm answers and evidence."],
+["Follow-up","Respond to the content or use language from the text."],
+["Exam strategy","Define the term, give a realistic example, explain WHY it works."]
+];
+const Q=[
+["Instruction: “In pairs, choose three pictures. You have two minutes.” Which is an ICQ?","How long do you have?",["What does “choose” mean?","Do you understand?","Is “choose” a verb?"],"ICQs check the procedure: grouping, task, time."],
+["Which question is NOT an ICQ for “Listen twice. Choose the best title alone, then compare with a partner”?","What does “title” mean?",["How many times will you listen?","Do you choose alone first or with your partner?","Do you compare before or after choosing?"],"That one checks vocabulary, not the task."],
+["Why is “Do you understand?” a weak check?","Students say “yes” even when they are lost.",["It is too long.","It checks grammar.","It is only for CCQs."],"A “yes” is not evidence. Ask something students must answer."],
+["When do you usually ask ICQs?","After the instructions, before the task starts.",["After the feedback.","Before the lead-in.","Only at the end of the lesson."],"They make sure the task will run smoothly."],
+["What do CCQs check?","The meaning of target language.",["The task procedure.","How loud students speak.","Spelling only."],"CCQ = Concept = meaning."],
+["Which is a form question, NOT a CCQ for meaning?","Is “must” a modal verb?",["Am I completely certain?","Do I think it is very likely?","Is the action finished?"],"It asks about grammar form, not meaning."],
+["Target: “She used to live in Samarkand.” Best CCQ?","Does she live there now?",["Is “used to” a past form?","Can you say “used to live”?","Do you understand “used to”?"],"It checks meaning: past, but not now."],
+["A good CCQ is…","short and simpler than the target language.",["longer than the target language.","full of new vocabulary.","a repeat of the target phrase."],"If the question is harder than the target, it fails."],
+["Schemata are…","organised knowledge and expectations students bring to a text.",["new words taught before listening.","the answers to the task.","the steps of a lesson."],"Prior knowledge helps comprehension."],
+["Students expect an interview to have questions and answers. This is…","formal schemata.",["content schemata.","a CCQ.","eliciting."],"Formal = Format: expectations about text type and organisation."],
+["Students predict what a radio interview will discuss. Which knowledge is used?","Content schemata.",["Formal schemata only.","None.","Grammar rules."],"Content = what they know about the topic."],
+["A teacher mimes to prompt the word “whisper.” This is…","eliciting.",["an ICQ.","pre-teaching by translation.","feedback."],"Eliciting draws the word out of the students."],
+["When should you stop eliciting?","When students clearly do not know the answer.",["When students know the answer.","When you have a picture.","At the lead-in."],"Don’t make students guess what they can’t know. Tell them."],
+["Which is the correct listening order?","Lead-in → gist → detail → follow-up",["Gist → lead-in → detail → follow-up","Detail → gist → lead-in → follow-up","Follow-up → lead-in → gist → detail"],"Context first, then general meaning, then specifics, then response."],
+["When do you set the gist task?","Before playing the audio.",["After the audio.","During feedback.","Never."],"Students need a purpose before they listen."],
+["Which words should you pre-teach?","Only blocking vocabulary.",["Every unknown word.","No words, ever.","Only grammar words."],"Pre-teach only what would stop understanding."],
+["“Did this happen yesterday or is it happening now?” is a…","CCQ.",["ICQ.","gist task.","lead-in."],"It checks the time meaning of language."],
+["“Are you working in groups of three?” is an…","ICQ.",["CCQ.","elicitation.","schema."],"It checks grouping, which is procedure."]
+];
+function go(t){document.querySelectorAll('.tabs button').forEach(x=>x.setAttribute('aria-selected',x.dataset.t===t));document.querySelectorAll('main section').forEach(s=>s.hidden=s.id!==t);scrollTo(0,0)}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>go(b.dataset.t));
+
+let deck=[...C],ci=0,flip=false;
+function showCard(){const c=deck[ci];$('#card').innerHTML='<small>'+(flip?'Meaning':'Term')+'</small><strong>'+c[flip?1:0]+'</strong>';$('#card').classList.toggle('back',flip);$('#cn').textContent=(ci+1)+' / '+deck.length}
+$('#card').onclick=()=>{flip=!flip;showCard()};
+$('#next').onclick=()=>{ci=(ci+1)%deck.length;flip=false;showCard()};
+$('#prev').onclick=()=>{ci=(ci-1+deck.length)%deck.length;flip=false;showCard()};
+$('#shuf').onclick=()=>{deck=shuf(C);ci=0;flip=false;showCard()};
+showCard();
+
+let qs,qi,sc,locked;
+function start(){qs=shuf(Q);qi=0;sc=0;nextQ()}
+function nextQ(){
+if(qi>=qs.length)return end();
+locked=false;
+const [q,ok,bad]=qs[qi];
+const opts=shuf([ok,...bad]);
+$('#qbox').innerHTML='<div class="bar"><i style="width:'+(qi/qs.length*100)+'%"></i></div><p class="cnt">Question '+(qi+1)+' of '+qs.length+'</p><h3>'+q+'</h3><div>'+opts.map(o=>'<button class="opt" data-ok="'+(o===ok?1:0)+'">'+o+'</button>').join('')+'</div><div id="fb" aria-live="polite"></div>';
+document.querySelectorAll('.opt').forEach(b=>b.onclick=()=>pick(b));
+}
+function pick(b){
+if(locked)return;locked=true;
+const right=b.dataset.ok==='1';
+if(right)sc++;
+document.querySelectorAll('.opt').forEach(o=>{if(o.dataset.ok==='1')o.classList.add('good')});
+if(!right)b.classList.add('bad');
+$('#fb').innerHTML='<p><b>'+(right?'Correct.':'Not quite.')+'</b> '+qs[qi][3]+'</p><button class="btn" id="nq">'+(qi+1<qs.length?'Next question':'See my score')+'</button>';
+$('#nq').onclick=()=>{qi++;nextQ()};
+$('#nq').focus();
+}
+function end(){
+const pct=Math.round(sc/qs.length*100);
+let best=pct;
+try{best=Math.max(pct,+localStorage.getItem('mp26best')||0);localStorage.setItem('mp26best',best)}catch(e){}
+const msg=pct>=80?'You are ready for the midterm.':pct>=50?'Good start. Review the Flashcards and try again.':'Read the Learn tab once more, then retry.';
+$('#qbox').innerHTML='<div class="bar"><i style="width:100%"></i></div><div class="big">'+sc+' / '+qs.length+'</div><p class="cnt">'+msg+' Best score: '+best+'%</p><div class="row"><button class="btn" id="again">Try again</button><button class="btn alt" id="rev">Review Learn tab</button></div>';
+$('#again').onclick=start;$('#rev').onclick=()=>go('learn');
+}
+start();
+</script>
+</body>
+</html>
